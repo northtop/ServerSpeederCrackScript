@@ -40,6 +40,7 @@ service network restart
 function Install_ServerSpeeder(){
 bash ${RUNDIR}/source/install.sh
 Change_MACADDR_lic;
+chattr +i /serverspeeder/etc/apx*
 service serverSpeeder restart
 Change_MACADDR_reduct;
 service serverSpeeder status
