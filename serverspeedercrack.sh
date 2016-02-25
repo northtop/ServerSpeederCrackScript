@@ -64,4 +64,4 @@ echo 'THANK YOU FOR YOUR USE!'
 echo 'I hope you can follow me on Twitter!'
 fi
 
-exit 
+exit
