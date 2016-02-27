@@ -94,5 +94,5 @@ apxexe="/serverspeeder/bin/acce-3.10.66.29-[CentOS_6.6_2.6.32-573.1.1.el6.x86_64
 apxlic="/serverspeeder/etc/apx-20341231.lic"
 
 serial="33AB04DBDB553FB8"
-email="backup0801@gmail.com"
+email="localhost@localhost.com"
 installerID="=QzM"
