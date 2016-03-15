@@ -42,6 +42,7 @@ bash ${RUNDIR}/source/install.sh
 Change_MACADDR_lic;
 chattr +i /serverspeeder/etc/*.lic
 chattr +i /serverspeeder/bin/acce*
+echo "dl.serverspeeder.com 127.0.0.1" >> /etc/hosts
 service serverSpeeder restart
 Change_MACADDR_reduct;
 service serverSpeeder status
