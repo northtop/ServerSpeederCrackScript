@@ -34,7 +34,8 @@ function Change_MACADDR_reduct(){
 ifconfig ${NIC} down
 ifconfig ${NIC} hw ether ${ReductLICMACADDR}
 ifconfig ${NIC} up
-service network restart
+service network restart;
+sh /etc/rc.d/rc.local;
 }
 
 function Install_ServerSpeeder(){
@@ -42,14 +43,13 @@ bash ${RUNDIR}/source/install.sh
 Change_MACADDR_lic;
 chattr +i /serverspeeder/etc/*.lic
 chattr +i /serverspeeder/bin/acce*
-echo "dl.serverspeeder.com 127.0.0.1" >> /etc/hosts
+echo "127.0.0.1 dl.serverspeeder.com" >> /etc/hosts
 service serverSpeeder restart
 Change_MACADDR_reduct;
 service serverSpeeder status
 echo 'INSTALL COMPLETE!'
 echo 'NOTICE:YOU CAN CHECK WHETHER IT IS RUNNING!'
 echo 'THANK YOU FOR YOUR USE!'
-echo 'Author : HuanMeng  Twitter : https://twitter.com/HuanMeng_'
 echo 'I hope you can follow me on Twitter!'
 }
 
